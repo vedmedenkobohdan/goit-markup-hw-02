@@ -1,0 +1,368 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --first-bg-color: #2f303a;
+}
+
+/*Шрифти для текстів та кольори*/
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+/*Утиліта*/
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  /*1168*/
+  width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*Костиль але хз як правильно забрати*/
+body li {
+  list-style-type: none;
+}
+
+/*Logo*/
+.logo {
+  color: var(--title-text-color);
+  font-family: "Roboto";
+  font-weight: 700;
+
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo > span {
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+/*Header*/
+.site-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.auth-nav .link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
+/*Hero*/
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+  /*Поміняти колір на білий коли буде фон*/
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin-top: 0px;
+}
+
+.hero {
+  margin-bottom: 94px;
+}
+
+.hero {
+  background-color: var(--first-bg-color);
+}
+
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+/*Костиль на задній фон*/
+
+/*Оформлюю кнопку головну*/
+.button {
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  padding: 10px 32px;
+}
+
+/*Description*/
+.description .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.description-list > li {
+  text-decoration: none;
+}
+
+/*Тоже костиль але там влазить список як по макету*/
+.description-list {
+  padding-left: 0px;
+}
+
+.description-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description {
+  margin-bottom: 94px;
+}
+
+.description-list .item {
+  width: 270px;
+  margin-left: 30px;
+}
+
+.description-list > .item:first-child {
+  margin-left: 0px;
+}
+
+/*What We Do*/
+.whatwedo .title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.whatwedo-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.whatwedo-list {
+  padding-left: 0px;
+}
+
+.whatwedo-list .item {
+  margin-left: 30px;
+}
+
+.whatwedo-list > .item:first-child {
+  margin-left: 0px;
+}
+
+.whatwedo .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.whatwedo {
+  margin-bottom: 94px;
+}
+
+/*Team*/
+.team-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team .title {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.team-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  padding-left: 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Поміняти колір на var*/
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-list .text {
+  margin: 0;
+}
+
+.team-list .item {
+  text-align: center;
+}
+
+/*Костиль 100% але незнаю як по індшому дати відступ на низ і зберегти розмір фону-кольору*/
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list ul {
+  margin-bottom: 0px;
+}
+
+/*Моя крива обгортка і вирівнювання*/
+.team .wrap {
+  background-color: var(--primary-white-color);
+
+  padding-bottom: 30px;
+}
+
+.team-list .wrap {
+  margin-left: 30px;
+}
+
+.team-list .wrap:first-child {
+  margin-left: 0px;
+}
+
+/*Footer*/
+/*От тут напевно неправильно Можливо це мало бути зверху загально для всіх але поки так*/
+.footer .link.adres {
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+}
+
+.footer .link.tel {
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+}
+
+/*Можливо так треба можливо ні поки лишу так як є*/
+.footer .link.adres:hover,
+.footer .link.adres:focus {
+  color: var(--accent-color);
+}
+
+.footer .link.tel:hover,
+.footer .link.tel:focus {
+  color: var(--accent-color);
+}
+
+.footer-address {
+  color: var(--primary-white-color);
+}
+
+.footer .logo {
+  color: var(--primary-white-color);
+}
+
+.footer {
+  background-color: var(--first-bg-color);
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.foot {
+  font-weight: 400;
+  font-style: normal;
+}
