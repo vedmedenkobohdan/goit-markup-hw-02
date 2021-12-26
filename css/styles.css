@@ -1,368 +1,304 @@
-:root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --primary-white-color: #ffffff;
-  --secondary-bg-color: #f5f4fa;
-  --first-bg-color: #2f303a;
-}
-
-/*Шрифти для текстів та кольори*/
 body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  background-color: white;
 }
-
-/*Утиліта*/
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  /*1168*/
-  width: 1240px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.section {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-/*Костиль але хз як правильно забрати*/
-body li {
+li {
   list-style-type: none;
 }
 
-/*Logo*/
 .logo {
-  color: var(--title-text-color);
-  font-family: "Roboto";
-  font-weight: 700;
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
 
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
   font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
+  line-height: 31px;
+
+  letter-spacing: 0.03em;
 }
 
-.logo > span {
-  color: var(--accent-color);
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-}
-
-/*Header*/
-.site-nav .link {
-  color: var(--title-text-color);
-
+.menu-nav {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
-  text-decoration: none;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
+.menu.item1 {
+  position: absolute;
+  width: 49px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+}
+.menu.item2 {
+  position: absolute;
+  width: 77px;
+  height: 16px;
+  left: 552px;
+  top: 32px;
 }
 
-.site-nav .link.current {
-  color: var(--accent-color);
+.menu.item3 {
+  position: absolute;
+  width: 68px;
+  height: 16px;
+  left: 679px;
+  top: 32px;
 }
 
-.auth-nav .link {
-  color: var(--primary-text-color);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  text-decoration: none;
+.auth-mail {
+  position: absolute;
+  width: 135px;
+  height: 16px;
+  left: 1078px;
+  top: 32px;
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: var(--accent-color);
+.auth-tel {
+  position: absolute;
+  width: 122px;
+  height: 16px;
+  left: 1263px;
+  top: 32px;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-}
-
-.site-nav .item + .item {
-  margin-left: 50px;
-}
-
-.site-nav .link {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.auth-nav {
-  display: flex;
-  margin-left: auto;
-}
-
-.auth-nav .item + .item {
-  margin-left: 50px;
-}
-
-/*Hero*/
 .hero {
-  text-align: center;
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+
+  background: #2f303a;
 }
 
-.hero-title {
-  /*Поміняти колір на білий коли буде фон*/
-  color: var(--primary-white-color);
+.title {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
 
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
+
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  color: #ffffff;
 }
 
-.hero-title {
-  margin-top: 0px;
-}
+.btn {
+  position: absolute;
+  width: 136px;
+  height: 30px;
+  left: 732px;
+  top: 440px;
 
-.hero {
-  margin-bottom: 94px;
-}
-
-.hero {
-  background-color: var(--first-bg-color);
-}
-
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-/*Костиль на задній фон*/
-
-/*Оформлюю кнопку головну*/
-.button {
-  color: var(--primary-white-color);
-
-  font-weight: 700;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
-  text-decoration: none;
+
+  color: #ffffff;
+
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.description.list {
+  position: absolute;
+  width: 1170px;
+  height: 101px;
+  left: 215px;
+  top: 774px;
 }
 
-.button.primary {
-  background-color: var(--accent-color);
-  padding: 10px 32px;
-}
-
-/*Description*/
-.description .title {
-  color: var(--title-text-color);
-
-  font-weight: 700;
+.list.caption {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-}
 
-.description-list > li {
-  text-decoration: none;
+  color: #212121;
 }
-
-/*Тоже костиль але там влазить список як по макету*/
-.description-list {
-  padding-left: 0px;
-}
-
-.description-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.description {
-  margin-bottom: 94px;
-}
-
-.description-list .item {
+.description.list .list.item1 {
+  position: absolute;
   width: 270px;
-  margin-left: 30px;
+  height: 101px;
+  left: 215px;
+  top: 774px;
 }
 
-.description-list > .item:first-child {
-  margin-left: 0px;
+.description.list .list.item2 {
+  position: absolute;
+  width: 270px;
+  height: 101px;
+  left: 515px;
+  top: 774px;
 }
 
-/*What We Do*/
-.whatwedo .title {
-  margin-top: 0px;
-  margin-bottom: 50px;
+.description.list .list.item3 {
+  position: absolute;
+  width: 270px;
+  height: 101px;
+  left: 815px;
+  top: 774px;
 }
 
-.whatwedo-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.whatwedo-list {
-  padding-left: 0px;
-}
-
-.whatwedo-list .item {
-  margin-left: 30px;
-}
-
-.whatwedo-list > .item:first-child {
-  margin-left: 0px;
-}
-
-.whatwedo .title {
-  color: var(--title-text-color);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  text-transform: uppercase;
+.description.list .list.item4 {
+  position: absolute;
+  width: 270px;
+  height: 101px;
+  left: 1115px;
+  top: 774px;
 }
 
 .whatwedo {
-  margin-bottom: 94px;
+  position: absolute;
+  width: 1170px;
+  height: 386px;
+  left: 215px;
+  top: 969px;
 }
 
-/*Team*/
-.team-title {
-  color: var(--title-text-color);
-
-  font-weight: 700;
+.subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.whatwedo.subtitle {
+  position: absolute;
+  width: 376px;
+  height: 42px;
+  left: 612px;
+  top: 969px;
+}
+.whatwedo .item1 {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 215px;
+  top: 1061px;
 }
 
-.team .title {
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+.whatwedo .item2 {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 615px;
+  top: 1061px;
 }
 
-.team-title {
-  margin-top: 0px;
-  margin-bottom: 50px;
+.whatwedo .item3 {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 1015px;
+  top: 1061px;
 }
 
-.team-list {
-  padding-left: 0px;
-
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/*Поміняти колір на var*/
 .team {
-  background-color: var(--secondary-bg-color);
+  position: absolute;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
 }
 
-.team-list .title {
-  margin-top: 30px;
-  margin-bottom: 10px;
+.team.subtitle {
+  position: absolute;
+  width: 264px;
+  height: 42px;
+  left: 668px;
+  top: 1543px;
 }
 
-.team-list .text {
-  margin: 0;
+.team.list .item1 {
+  position: absolute;
+  width: 270px;
+  height: 368px;
+  left: 215px;
+  top: 1635px;
+}
+.team.list .item2 {
+  position: absolute;
+  width: 270px;
+  height: 368px;
+  left: 515px;
+  top: 1635px;
 }
 
-.team-list .item {
-  text-align: center;
+.team.list .item3 {
+  position: absolute;
+  width: 270px;
+  height: 368px;
+  left: 815px;
+  top: 1635px;
 }
 
-/*Костиль 100% але незнаю як по індшому дати відступ на низ і зберегти розмір фону-кольору*/
-.team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.team-list ul {
-  margin-bottom: 0px;
-}
-
-/*Моя крива обгортка і вирівнювання*/
-.team .wrap {
-  background-color: var(--primary-white-color);
-
-  padding-bottom: 30px;
-}
-
-.team-list .wrap {
-  margin-left: 30px;
-}
-
-.team-list .wrap:first-child {
-  margin-left: 0px;
-}
-
-/*Footer*/
-/*От тут напевно неправильно Можливо це мало бути зверху загально для всіх але поки так*/
-.footer .link.adres {
-  color: var(--primary-text-color);
-
-  text-decoration: none;
-}
-
-.footer .link.tel {
-  color: var(--primary-text-color);
-
-  text-decoration: none;
-}
-
-/*Можливо так треба можливо ні поки лишу так як є*/
-.footer .link.adres:hover,
-.footer .link.adres:focus {
-  color: var(--accent-color);
-}
-
-.footer .link.tel:hover,
-.footer .link.tel:focus {
-  color: var(--accent-color);
-}
-
-.footer-address {
-  color: var(--primary-white-color);
-}
-
-.footer .logo {
-  color: var(--primary-white-color);
+.team.list .item4 {
+  position: absolute;
+  width: 270px;
+  height: 368px;
+  left: 1115px;
+  top: 1635px;
 }
 
 .footer {
-  background-color: var(--first-bg-color);
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+
+  background: #2f303a;
 }
 
-.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer .logo {
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
 }
 
-.foot {
-  font-weight: 400;
-  font-style: normal;
+.footer address {
+  position: absolute;
+  width: 231px;
+  height: 81px;
+  left: 215px;
+  top: 2208px;
 }
