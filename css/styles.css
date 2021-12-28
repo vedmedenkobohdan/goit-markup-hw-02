@@ -1,304 +1,64 @@
-body {
-  background-color: white;
+/*
+цвет основного текста: #757575;
+вторичный цвет текста: #212121;
+акцент: #2196F3;
+белый цвет: #FFFFFF;
+#F5F4FA;
+#2F303A;
+rgba(255, 255, 255, 0.6);
+ */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --first-bg-color: #2f303a;
+  --footer-address-color: rgba(255, 255, 255, 0.6);
 }
-li {
-  list-style-type: none;
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
 }
 
 .logo {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-
-  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
 }
 
-.menu-nav {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
+.auth-nav .link {
+  color: var(--title-text-color);
 }
 
-.menu.item1 {
-  position: absolute;
-  width: 49px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
-}
-.menu.item2 {
-  position: absolute;
-  width: 77px;
-  height: 16px;
-  left: 552px;
-  top: 32px;
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
 }
 
-.menu.item3 {
-  position: absolute;
-  width: 68px;
-  height: 16px;
-  left: 679px;
-  top: 32px;
+/* Section */
+
+.section-title {
+  color: var(--title-text-color);
 }
 
-.auth-mail {
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
+/* Features */
+
+.features .title {
+  color: var(--title-text-color);
 }
 
-.auth-tel {
-  position: absolute;
-  width: 122px;
-  height: 16px;
-  left: 1263px;
-  top: 32px;
-}
+/* Team */
 
-.hero {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-
-  background: #2f303a;
-}
-
-.title {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
-.btn {
-  position: absolute;
-  width: 136px;
-  height: 30px;
-  left: 732px;
-  top: 440px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
-
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-.description.list {
-  position: absolute;
-  width: 1170px;
-  height: 101px;
-  left: 215px;
-  top: 774px;
-}
-
-.list.caption {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-.description.list .list.item1 {
-  position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 215px;
-  top: 774px;
-}
-
-.description.list .list.item2 {
-  position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 515px;
-  top: 774px;
-}
-
-.description.list .list.item3 {
-  position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 815px;
-  top: 774px;
-}
-
-.description.list .list.item4 {
-  position: absolute;
-  width: 270px;
-  height: 101px;
-  left: 1115px;
-  top: 774px;
-}
-
-.whatwedo {
-  position: absolute;
-  width: 1170px;
-  height: 386px;
-  left: 215px;
-  top: 969px;
-}
-
-.subtitle {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-.whatwedo.subtitle {
-  position: absolute;
-  width: 376px;
-  height: 42px;
-  left: 612px;
-  top: 969px;
-}
-.whatwedo .item1 {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 1061px;
-}
-
-.whatwedo .item2 {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 615px;
-  top: 1061px;
-}
-
-.whatwedo .item3 {
-  position: absolute;
-  width: 370px;
-  height: 294px;
-  left: 1015px;
-  top: 1061px;
-}
-
-.team {
-  position: absolute;
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
-}
-
-.team.subtitle {
-  position: absolute;
-  width: 264px;
-  height: 42px;
-  left: 668px;
-  top: 1543px;
-}
-
-.team.list .item1 {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 215px;
-  top: 1635px;
-}
-.team.list .item2 {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 515px;
-  top: 1635px;
-}
-
-.team.list .item3 {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 815px;
-  top: 1635px;
-}
-
-.team.list .item4 {
-  position: absolute;
-  width: 270px;
-  height: 368px;
-  left: 1115px;
-  top: 1635px;
-}
-
-.footer {
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
-
-  background: #2f303a;
-}
-
-.footer .logo {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 2157px;
-}
-
-.footer address {
-  position: absolute;
-  width: 231px;
-  height: 81px;
-  left: 215px;
-  top: 2208px;
+.team .title {
+  color: var(--title-text-color);
 }
