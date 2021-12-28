@@ -21,6 +21,7 @@ body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -70,6 +71,7 @@ a {
 
 .hero.section {
   background-color: var(--first-bg-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -77,12 +79,17 @@ a {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .hero .button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
 /* Section */
@@ -92,6 +99,7 @@ a {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
+  text-align: center;
 }
 
 /* Features */
@@ -137,6 +145,7 @@ a {
 .button.secondary {
   background-color: var(--secondary-bg-color);
 }
+.button.secondary:hover,
 .button.secondary:focus,
 .button.secondary:active {
   color: var(--primary-white-color);
