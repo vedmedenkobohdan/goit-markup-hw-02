@@ -85,6 +85,7 @@ a {
 }
 
 .hero .button {
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
@@ -109,6 +110,7 @@ a {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .features p {
   font-size: 14px;
@@ -179,6 +181,7 @@ a {
 /* Portfolio */
 
 .filters {
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.625;
