@@ -55,7 +55,7 @@ a {
 }
 
 .auth-nav .link {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -81,15 +81,6 @@ a {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
-}
-
-.hero .button {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
   text-align: center;
 }
 
@@ -162,6 +153,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--secondary-bg-color);
+  border-color: transparent;
 }
 .button.secondary:hover,
 .button.secondary:focus,
@@ -187,6 +179,10 @@ a {
 
 .footer .link {
   color: var(--footer-address-color);
+}
+
+.footer .primary.link {
+  color: var(--primary-white-color);
 }
 
 .footer .link:hover,
